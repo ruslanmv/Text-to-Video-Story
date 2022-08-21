@@ -1,5 +1,5 @@
-min-dalle
-emoji
+min-dalle==0.4.6
+emoji==1.7.0
 gradio
 transformers 
 requests 
@@ -15,3 +15,9 @@ accelerate
 nvidia-ml-py3
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==1.12.1+cu116
+wrapt 
+absl-py
+opt_einsum
+gast
+flatbuffers
+termcolor
