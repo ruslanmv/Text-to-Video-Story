@@ -1,0 +1,12 @@
+gradio
+min-dalle
+transformers 
+torch 
+requests 
+moviepy 
+huggingface_hub 
+opencv-python
+imageio-ffmpeg
+imageio==2.4.1
+gTTS
+mutagen
