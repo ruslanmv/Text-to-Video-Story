@@ -2,17 +2,15 @@
 
 Hello everyone, today we are going to create a simple application that will generate a video from a text with images generated with Artificial Intelligence.
 
-I am going to use Google Colab to run this program because requires GPU with a lot of memory.
+I am going to use Google Collab to run this program because requires GPU with a lot of memory.
 
+This just an introduction of the amazing world of the generation of synthetic images.
 
+The technique is based on generative adversarial network (GAN) is a machine learning (ML) model in which two neural networks compete with each other to become more accurate in their predictions.
 
-This just an introduction of the amazing world of the generation of syntetic images.
+What we are going to to is create a pipeline that will convert a long text into small sentences that from them will create several pictures which will create.
 
-The technique is based on generative adversarial network (GAN) is a machine learning (ML) wmodel in which two neural networks compete with each other to become more accurate in their predictions.
-
-
-
-
+https://youtube.com/shorts/-qEI7UAmOxk?feature=share
 
 
 
