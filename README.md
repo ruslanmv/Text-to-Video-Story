@@ -10,7 +10,15 @@ The technique is based on generative adversarial network (GAN) is a machine lear
 
 What we are going to to is create a pipeline that will convert a long text into small sentences that from them will create several pictures which will create.
 
-https://youtube.com/shorts/-qEI7UAmOxk?feature=share
+For example from the following text:
+
+```
+text ='Once, there was a girl called Laura who went to the supermarket to buy the ingredients to make a cake. Because today is her birthday and her friends come to her house and help her to prepare the cake.'
+```
+
+This AI program will  produce the following video:
+
+<video src="result_final.mp4"></video>
 
 
 
@@ -1498,5 +1506,4 @@ HTML("""
 
 You can play with this code in Google Collab by  download the single code here or the full notebook code here.
 
-Congratulations! 
-
+**Congratulations!**  You have finished this project.
