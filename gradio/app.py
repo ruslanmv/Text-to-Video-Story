@@ -24,10 +24,9 @@ model = AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6")
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(device)
 
-def log_gpu_memory():
-    print(subprocess.check_output('nvidia-smi').decode('utf-8'))
-
-log_gpu_memory()
+#def log_gpu_memory():
+#    print(subprocess.check_output('nvidia-smi').decode('utf-8'))
+#log_gpu_memory()
 
 
 def get_output_video(text):
@@ -47,6 +46,8 @@ def get_output_video(text):
   Set the dtype to torch.float16 to save GPU memory.
   If you have an Ampere architecture GPU you can use torch.bfloat16. 
   Set the device to either "cuda" or "cpu". Once everything has finished initializing,
+  float32 is faster than float16 but uses more GPU memory.
+          
   '''
 
   def generate_image(
@@ -63,10 +64,10 @@ def get_output_video(text):
           models_root=models_root,
           is_reusable=True,
           is_verbose=True,
-          dtype=torch.float16 if fp16 else torch.float32 ,#param ["float32", "float16", "bfloat16"] #float32 is faster than float16 but uses more GPU memory.
-          device='cuda' #'cpu' 
+          dtype=torch.float16 if fp16 else torch.float32, #param ["float32", "float16", "bfloat16"] 
+          #device='cuda' #'cpu' 
       ) 
-      log_gpu_memory()
+      #log_gpu_memory()
 
       image = model.generate_image(
           text, 
@@ -85,7 +86,7 @@ def get_output_video(text):
       text=senten,
       seed=1,
       grid_size=1, #param {type:"integer"}
-      top_k=128, #param {type:"integer"}
+      top_k=256, #param {type:"integer"}
 
       image_path='generated',
       models_root='pretrained',
