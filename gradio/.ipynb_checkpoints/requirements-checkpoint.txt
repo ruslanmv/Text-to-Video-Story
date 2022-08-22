@@ -1,0 +1,17 @@
+min-dalle==0.4.6
+emoji==1.7.0
+gradio
+transformers 
+requests 
+moviepy 
+huggingface_hub 
+opencv-python
+imageio-ffmpeg
+imageio==2.4.1
+gTTS
+mutagen
+nltk
+accelerate 
+nvidia-ml-py3
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.12.1+cu116
